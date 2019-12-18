@@ -38,6 +38,19 @@ public class Main {
             System.out.println("Nomor HP        : "+nasabah.getNope());
         }
 
+
+        System.out.print("Mau Hapus Data ? y/n : ");
+        char jjjwb = scan.next().charAt(0);
+        if (jjjwb == 'y' || jjjwb == 'Y'){
+            System.out.print("Masukkan Key yg mau dihapus : ");
+            String bb = scan.next();
+            if (data.get(bb) == null){
+                System.out.println("Data tidak valid");
+            }else {
+                data.remove(bb);
+            }
+        }
+
         System.out.print("Tampilkan Semua Data ? y/n : ");
         char jjwb = scan.next().charAt(0);
 
